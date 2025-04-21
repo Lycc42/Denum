@@ -37,22 +37,24 @@ setting = {
     },
     'HDFS': {
         'dataset_name': 'HDFS',
-        'input_path': '../Logs/HDFS/HDFS.log',
+        # 'input_path': '../Logs/HDFS/HDFS.log',
+        'input_path': 'C:/Users/19449/Desktop/HDFS_v1/HDFS.log',
 
     },
     'Android': {
         'dataset_name': 'Android',
-        'input_path': '../Logs/Android/Android.log',
-
+        # 'input_path': '../Logs/Android/Android.log',
+        'input_path': 'C:/Users/19449/Desktop/Android_v1/Android.log'
     },
     'BGL': {
         'dataset_name': 'BGL',
-        'input_path': '../Logs/BGL/BGL.log',
-
+        # 'input_path': '../Logs/BGL/BGL.log',
+        'input_path': 'C:/Users/19449/Desktop/BGL/BGL.log'
     },
     'HPC': {
         'dataset_name': 'HPC',
-        'input_path': '../Logs/HPC/HPC.log',
+        # 'input_path': '../Logs/HPC/HPC.log',
+        'input_path': 'C:/Users/19449/Desktop/HPC/HPC.log'
 
     },
     'Spark': {
@@ -67,12 +69,14 @@ setting = {
     },
     'HealthApp': {
         'dataset_name': 'HealthApp',
-        'input_path': '../Logs/HealthApp/HealthApp.log',
+        # 'input_path': '../Logs/HealthApp/HealthApp.log',
+        'input_path': 'C:/Users/19449/Desktop/HealthApp/HealthApp.log'
 
     },
     'OpenStack': {
         'dataset_name': 'OpenStack',
-        'input_path': '../Logs/OpenStack/OpenStack.log',
+        # 'input_path': '../Logs/OpenStack/OpenStack.log',
+        'input_path': 'C:/Users/19449/Desktop/OpenStack/OpenStack.log'
 
     },
     'Windows': {
@@ -89,6 +93,7 @@ setting = {
 
 def main():
 
+    # 解析命令行参数
     parser = argparse.ArgumentParser(description="Compress log files based on setting name.")
     parser.add_argument("setting_name", help="The name of the setting to be applied.")
     args = parser.parse_args()
